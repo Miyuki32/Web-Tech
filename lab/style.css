@@ -1,0 +1,48 @@
+/* Description: Lab 2: Working with Lists and Links */
+/* Author: Ivan */
+/* Date: 18/03/2024 */
+/* Validated: OK 18/03/2024 */
+
+header, h3{
+    text-align: center;
+    }
+
+nav{
+    font-family: "Arial Black";
+    text-align: center;
+    font-size: 16px;
+    }
+
+nav a:link{
+    color: #8A0808;
+    text-decoration: none;
+    }
+    nav a:visited{
+    color: #8A0808;
+    text-decoration: none;
+    }
+    nav a:hover{
+    text-decoration: underline;
+    }
+    nav a:active{
+    color: red;
+    }
+
+article{
+    line-height: 150%;
+    }
+
+article, ul{
+    list-style-type: square;
+    }
+
+article > ol ol{
+    list-style: lower-alpha;
+    
+    }
+
+    
+
+footer{
+    text-align-last: right;
+    }
