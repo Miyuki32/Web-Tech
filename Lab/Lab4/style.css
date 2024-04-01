@@ -1,0 +1,62 @@
+body{
+    background-image: url(./images/parch.jpg);
+    color: #6E3939;
+    }
+
+h1{
+    font-family: Arial, Helvetica;
+    font-size: 22px;
+}
+
+.article_img{
+    float: left;
+    padding-right: 15px;
+}
+
+figure{
+    margin: 0;
+}
+
+table{
+    width: 450px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid;
+    background-color: white;
+}
+
+th{
+    vertical-align: bottom;
+    background-color: #FFB6C1;
+
+}
+
+th, td{
+    padding: 4px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.total{
+    background-color: #F5DEB3;
+    text-align: center;
+}
+
+caption{
+    caption-side: bottom;
+}
+
+.g_total{
+    background-color: #F5DEB3;
+}
+
+footer{
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+address{
+    font-style: normal;
+}
