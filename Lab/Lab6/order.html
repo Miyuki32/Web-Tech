@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Red Ball-Online Ordering</title>
+    <meta charset="utf-8">
+    <meta name="autdor" content="Ivan Ngu">
+    <meta name="description" content="A form">
+    <meta name="keywords" content="Restaurant">
+    <link rel='stylesheet' type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./redball.png" alt="logo">
+        <h1>Online Ordering</h1>
+        <p>Thank you for using our online ordering form for quick and easy orders, delivered fee and fast to your door.</p>
+    </header>
+    <article>
+        <form name="order" action="MAILTO:order@redballpizza.com" metdod="post" enctype="text/plain">
+            <fieldset><legend>Customer Infromation</legend>
+                <table> 
+                    <tr>
+                        <td>1.</td>
+                        <td>Name*</td>
+                        <td colspan="3"><input type="text" name="name" placeholder="Include your first and last name" maxlengtd="40" required></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Delivery Address*</td>
+                        <td colspan="3"><textarea name="address" rows="3" cols="40" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Area (Select your suburb and postcode)</td>
+                        <td colspan="3">
+                            <select name="area" size="10" multiple>
+                                <optgroup label="Suburb">
+                                    <option value="docklands" selected>Docklands</option>
+                                    <option value="soutdwhart">Soutd Whart</option>
+                                    <option value="soutdyama">Soutd Yama</option>
+                                    <option value="stkiida">St Kiida</option>
+                                </optgroup>
+                                <optgroup label="Poscode">
+                                    <option value="3008" selected>3008</option>
+                                    <option value="3006">3006</option>
+                                    <option value="3141">3141</option>
+                                    <option value="3182">3182</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Phone*</td>
+                        <td colspan="3">
+                            <input type="text" name="phone" placeholder="(02)12345678" maxlengtd="12" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Email</td>
+                        <td colspan="3">
+                            <input type="text" name="email" maxlengtd="40">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Delivery Date</td>
+                        <td><input type="date" name="date"></td>
+                        <td>Delivery Time</td>
+                        <td><input type="time" name="time"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <table>
+                    <legend>Build Your Own Pizza</legend>
+                    <tr>
+                        <td rowspan="2">7.</td>
+                        <td rowspan="2">Select your pizza size</td>
+                        <td colspan="3">(1=small, 2=medium, 3=large)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="range" name="size" value="2" min="1" max="3"></td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td colspan="3">Customize your pizza(s) (maximum 2 types for online ordering)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="3">
+                            <table>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Crust</th>
+                                    <th>Quantity</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="type">
+                                            <option value="californiapizza">California Pizza</option>
+                                            <option value="hawaiianpizza">Hawaiian Pizza</option>
+                                            <option value="newyorkpizza">New York Pizza</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="crust">
+                                            <option value="thin">Thin</option>
+                                            <option value="thick">Thick</option>
+                                            <option value="Pan">Pan</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" name="quantity" min="1" max="5" value="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="type">
+                                            <option value="californiapizza">California Pizza</option>
+                                            <option value="hawaiianpizza">Hawaiian Pizza</option>
+                                            <option value="newyorkpizza">New York Pizza</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="crust">
+                                            <option value="thin">Thin</option>
+                                            <option value="thick">Thick</option>
+                                            <option value="Pan">Pan</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" name="quantity" min="1" max="5" value="1">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>Topping(s)</td>
+                        <td>
+                            <input type="checkbox" name="pepperoni" id="pepperoni" value="pepperoni">
+                            <label for="pepperoni">Pepperoni</label>
+                            <input type="checkbox" name="chicken" id="chicken" value="chicken">
+                            <label for="chicken">Chicken</label>
+                            <input type="checkbox" name="mushrooms" id="mushrooms" value="mushrooms">
+                            <label for="pepperoni">Mushrooms</label>
+                            <input type="checkbox" name="onions" id="onions" value="onions">
+                            <label for="pepperoni">Onions</label>
+                            <input type="checkbox" name="tomatoes" id="tomatoes" value="tomatoes">
+                            <label for="pepperoni">Tomatoes</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>Payment Metdod</td>
+                        <td>
+                            <input type="radio" name="payment" id="cash" value="cash">
+                            <label for="cash">Cash</label>
+                            <input type="radio" name="payment" id="credit" value="credit">
+                            <label for="cash">Credit</label>
+                        </td>
+                    </tr>
+            </table>
+        </fieldset>
+        <p><input type="reset" value="Cancel"> <input type="submit" value="Sumbit Order"> </p>
+        </form>
+    </article>
+</body>
+
+</html>

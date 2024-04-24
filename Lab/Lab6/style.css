@@ -1,0 +1,41 @@
+h1{
+    color:#e94500;
+    margin: 0;
+}
+
+legend{
+    font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 15px;
+}
+
+table, td, th{
+    padding: 4px;
+}
+
+table table tr td{
+    text-align: center;
+}
+
+table table, table table td, table table th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table table{
+    width: 350px;
+}
+
+p > input{
+    float: right;
+}
+
+input, textarea, select{
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus{
+    border: 2px solid #e94500;
+}
